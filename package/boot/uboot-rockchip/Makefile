@@ -264,6 +264,13 @@ define U-Boot/lyt-t68m-rk3568
     lyt_t68m
 endef
 
+define U-Boot/lubancat-2n-rk3568
+  $(U-Boot/rk3568/Default)
+  NAME:=LubanCat-2N
+  BUILD_DEVICES:= \
+    embedfire_lubancat-2n
+endef
+
 define U-Boot/mmbox-anas3035-rk3568
   $(U-Boot/rk3568/Default)
   NAME:=MMBOX ANAS3035
@@ -469,6 +476,7 @@ UBOOT_TARGETS := \
   fastrhino-r66s-rk3568 \
   fastrhino-r68s-rk3568 \
   lyt-t68m-rk3568 \
+  lubancat-2n-rk3568 \
   mmbox-anas3035-rk3568 \
   mrkaio-m68s-rk3568 \
   nanopi-r5c-rk3568 \

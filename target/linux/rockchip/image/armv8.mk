@@ -80,6 +80,15 @@ define Device/ezpro_mrkaio-m68s
 endef
 TARGET_DEVICES += ezpro_mrkaio-m68s
 
+define Device/embedfire_lubancat-2n
+  DEVICE_VENDOR := EmbedFire
+  DEVICE_MODEL := LubanCat-2N
+  SOC := rk3568
+  BOOT_FLOW := pine64-img
+  DEVICE_PACKAGES := kmod-r8125 -urngd kmod-ata-ahci
+endef
+TARGET_DEVICES += embedfire_lubancat-2n
+
 define Device/firefly_roc-rk3328-cc
   DEVICE_VENDOR := Firefly
   DEVICE_MODEL := ROC-RK3328-CC
