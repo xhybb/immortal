@@ -38,6 +38,9 @@ rockchip_setup_interfaces()
 	cyber,cyber3588-aib)
 		ucidef_set_interfaces_lan_wan 'lan1' 'wan'
 		;;
+	embedfire,lubancat2n)
+		ucidef_set_interfaces_lan_wan "eth1 eth2 eth3" "eth0"
+		;;	
 	friendlyarm,nanopc-t6)
 		ucidef_set_interfaces_lan_wan 'eth1' 'eth2'
 		;;
@@ -93,6 +96,7 @@ rockchip_setup_macs()
 	armsom,sige3|\
 	armsom,sige7|\
 	cyber,cyber3588-aib|\
+	embedfire,lubancat2n|\
 	ezpro,mrkaio-m68s|\
 	friendlyarm,nanopc-t6|\
 	friendlyarm,nanopi-r2c|\
