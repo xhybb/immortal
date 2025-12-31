@@ -51,6 +51,16 @@ cyber,cyber3588-aib)
 	set_interface_core 4 "lan1"
 	set_interface_core 8 "wan"
 	;;
+embedfire,lubancat2n)
+	set_interface_core 0 "eth0"
+	set_interface_core 1 "eth1"
+	set_interface_core 2 "eth2-0"
+	set_interface_core 2 "eth2-16"
+	set_interface_core 1 "eth2-18"
+	set_interface_core 3 "eth3-0"
+	set_interface_core 3 "eth3-18"
+	set_interface_core 1 "eth3-16"
+	;;	
 friendlyarm,nanopc-t6)
 	set_interface_core 10 "eth1"
 	set_interface_core 20 "eth2"
